@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    h1{
-        color: orange
-    }
-</style>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Document</title>
 </head>
-<body>
-    <h1>Hello</h1>
-
+<style>
+  #title{
+    color: black;
+    text-align: center;
+  }
+  .size-image{
+    width: 35%;
+    height: 65vh;
+    display: block;
+    margin: auto;
+  }
+  .align-center{
+      text-align: center;
+  }
+  #list{
+      font-size: 30px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+  }
+  
+  
     
+  
+</style>
+  
+<body id="main">
+  <div id="title">
+    <h1>Abraham Lincoln</h1>
+  </div>
+  <figure id="img-div">
+    <img class = "size-image" src="Abe.jpg" alt="Loading Failed...">
+    <figcaption id="img-caption" class="align-center">Abraham Lincoln Portrait</figcaption>
+  </figure>
+  <div id="tribute-info">
+      <p><a id="tribute-link" href="https://en.wikipedia.org/wiki/Abraham_Lincoln" target="_blank">Abraham Lincoln</a> was one of the greatest US presidents ever. He had many accomplishments that were unfathomed before his time. He is most famous for writing the emancipation proclamation, which freed slaves all throughout the US.</p>
+      <p>Here is a timeline of his life</p>
+      <div id="list">
+         
+        <ul>
+            <li>1832-Runs for first Political Office and loses</li>
+            <li>1836-Became a Lawyer</li>
+            <li>1842-Gets Married</li>
+            <li>1846-Gets elected for the house of representatives</li>
+            <li>1860-Wins Presidency</li>
+            <li>1864-Signs Emancipation Proclamation</li>
+            <li>185-Assassinated by John Wilkes Booth</li>
+        </ul> 
+      </div>  
+  </div>
+
+
+
+ 
+  
 </body>
 </html>
