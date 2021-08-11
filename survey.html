@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .align-center{
+        text-align: center;
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+    .gradient{
+        background-color: rgb(30, 211, 243)
+    }
+    .center-object{
+        width: 20%;
+        height: auto;
+        margin-left: 41%;
+        background-color: teal;
+        opacity: 1;
+        border-radius: 5px;
+    }
+    #submit{
+        width: 200px;
+        margin-left: 10%;
+        color: green;
+        background-color: orange;
+        border-color: orange;
+        border-radius: 5px;
+    }
+    body{
+        background-image: url("download.png")
+    }
+    #head{
+        background-color: yellowgreen;
+        
+    }
+    
+    #survey-form{
+        position: absolute; 
+        top: 30%;
+    }
+
+    
+</style>
+<body class="gradient">
+    <div id="head">
+        <h1 id="title" class="align-center">Sign Up Sheet</h1>
+        <p id="description" class="align-center">Sign up with your name and email</p>
+    </div>
+    <form id="survey-form" class="center-object">
+        <label for="name"><b>Name</b></label>
+        <br>
+        <input type="text" id="name" placeholder="John Doe" required>
+        <br>
+        <br>
+        <label for="email"><b>Email</b></label>
+        <br>
+        <input type="email" id="email" placeholder="email@service.com" required>
+        <br>
+        <br>
+        <label for="age"><b>Age</b></label>
+        <br>
+        <input type="number" id="age" placeholder="age" min="18" max="100">
+        <br>
+        <br>
+        <label for="option">Choose an option: </label>
+        <br>
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+        </select>
+        <input type="submit" value="Submit" id="submit">
+        
+
+
+    </form>
+</body>
+</html>
